@@ -9,20 +9,11 @@ def setup
 @drink1 = Drink.new("WKD", 1.20, 5.05)
 @drink2 = Drink.new("stella", 5.80, 6.0)
 @drink3 = Drink.new("bulmers", 3.70, 4.8)
-@drink4 = Drink.new("WKD", 1.20, 5.05)
-@drink5 = Drink.new("stella", 5.80, 6.0)
-@drink6 = Drink.new("bulmers", 3.70, 4.8)
 @customer2 = Customer.new("Steve", 19.0, 36)
 @customer1 = Customer.new("Tony", 19.0, 11)
 drinks = {@drink1 => 23, @drink2 =>10, @drink3 => 80}
 @pub = Pub.new("chanter", 500.99, drinks)
 
-
-# @pub.stock() = {
-#    @drink1 => 23,
-#    @drink2 =>10,
-#    @drink3 => 80
-#  }
 
 
 end
@@ -101,7 +92,7 @@ end
 
     assert_equal(381.6,@pub.total_stock_value())
 
-  end 
+  end
 
 
 end
